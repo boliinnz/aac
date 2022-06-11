@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "c34db168-56b5-41ce-81f3-7ebca4f1fe94",
+		"name": "bank transaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16230813"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/banks/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"John\" , \"lastName\" : \"Sina\" ,\"accountBalance\" : 2000 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/banks/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"banks",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/banks/account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/banks/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"banks",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/banks/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211,\r\n\"amount\": 200 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/banks/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"banks",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/banks/account/last-ten-transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/banks/account/last-ten-transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"banks",
+						"account",
+						"last-ten-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/banks/balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/banks/balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"banks",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/banks/date-balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/banks/date-balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"banks",
+						"date-balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v2/banks/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"John\" , \"lastName\" : \"Sina\" ,\"accountBalance\" : 2000 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/banks/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"banks",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v2/banks/account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v2/banks/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"banks",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v2/banks/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211,\r\n\"amount\": 200 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v2/banks/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"banks",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v2/banks/account/last-ten-transaction Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v2/banks/account/last-ten-transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"banks",
+						"account",
+						"last-ten-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v2/banks/balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v2/banks/balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"banks",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v2/banks/date-balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountNumber\" : 311482211 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v2/banks/date-balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"banks",
+						"date-balance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
